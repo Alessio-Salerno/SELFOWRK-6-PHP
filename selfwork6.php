@@ -13,29 +13,42 @@ Scrivere un programma che stampi in console tutti i numeri da uno a cento.
 
 //  CICLO FOR PER COUNTER 
 
-for($i= 0; $i <= 100; $i++){
-    echo $i . "\n";
-}
+// for($i= 0; $i <= 100; $i++){
+//     echo $i . "\n";
+// }
 
 
 // CONDIZIONE SE È MULTIPLO DI 5 STAMPARE JAVASCRIPT
 
 
 
-    for ($i = 1; $i <= 100; $i++) {
-        if ($i % 15 === 0) {
-            echo "HACKADEMY\n";
-
-        } elseif ($i % 5 === 0) {
-            echo "JAVASCRIPT\n";
-
-        } elseif ($i % 3 === 0) {
-            echo "PHP\n";
-        }
-    }
-
-
-
-
-
-?>
+for($i = 1; $i <= 100; $i++) {
+    switch ($i){
+        case $i % 3 === 0:
+            echo 'PHP' . "\n";
+            break;
+            
+            
+            case $i % 5 === 0:
+                echo 'JAVASCRIPT' . "\n";
+                break;
+                
+                
+                case $i % 15 === 0:
+                    echo 'HACKADEMY' . "\n";
+                    break;
+                    
+                    
+                    default:
+                    echo "$i \n";
+                    break;
+     }
+                
+            }
+            
+            
+            
+            
+            
+            
+            ?>
